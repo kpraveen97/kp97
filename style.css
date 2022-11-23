@@ -276,7 +276,16 @@ textarea {
     font-size: 1rem;
     line-height: 1.5;
 }
-
+.mt-6 {
+    margin-top: 60px;
+}
+.mb-6 {
+    margin-bottom: 60px;
+}
+h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
 h1,
 h2,
 h3,
@@ -347,6 +356,7 @@ big {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -1115,6 +1125,7 @@ p {
     color: #fff;
 }
 
+/* image scroll hover  */
 
 /* Design Starts  */
 
@@ -1145,7 +1156,49 @@ p {
     margin-bottom: 30px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
 
+.social-icons li {
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #f2f3f4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lets-connect h2 {
+    font-size: 30px;
+}
+
+.services-item {
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+.services-item i {
+    width: 60px;
+    height: 60px;
+    background-color: #f2f3f4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.demo-item {
+    height: 420px;
+    overflow: hidden;
+}
 
 
 /* Responsive   */

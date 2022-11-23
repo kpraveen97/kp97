@@ -1,2 +1,2 @@
-# WP-Agency
-WP Agency Main Site.
+# WP-Themes
+Powerful WordPress Themes
