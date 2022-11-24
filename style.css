@@ -1227,6 +1227,16 @@ p {
     color: white;
     opacity: 0.7;
 }
+.whatsapp-floating {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+}
+.play-btn i {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 /* Responsive   */
 @media (min-width: 576px) {
