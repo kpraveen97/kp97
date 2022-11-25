@@ -1066,12 +1066,17 @@ section {
     display: block;
     margin: 0;
     line-height: normal;
+    text-transform: capitalize;
 }
 
 .wp-theme-section-title p {
     max-width: 600px;
     width: 100%;
     margin: 20px auto auto auto;
+}
+.slider-item p {
+    max-width: 600px;
+    margin: 30px auto;
 }
 
 p {
@@ -1090,7 +1095,7 @@ p {
 .play-btn {
     background: var(--wp-theme-primary-color);
     border-radius: 50%;
-    animation: animate 2s linear infinite;
+    animation: animatewa 2s linear infinite;
     cursor: pointer;
     width: 70px;
     height: 70px;
@@ -1101,6 +1106,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.play-btn.whatsapp-green {
+    background: #25D366;
 }
 
 .play-btn i {
@@ -1121,6 +1130,21 @@ p {
         box-shadow: 0 0 0 rgba(var(--wp-theme-primary-color), 0.5);
     }
 }
+
+@keyframes animatewa {
+    0% {
+        box-shadow: 0 0 0 0 rgba(#25D366, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px #25D366;
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(#25D366, 0.5);
+    }
+}
+
 
 ::selection {
     background: var(--wp-theme-primary-color);
@@ -1236,6 +1260,20 @@ p {
     color: white;
     font-weight: bold;
     font-size: 30px;
+}
+.agency-theme-demo img,
+.demo-item img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+.agency-theme-demo {
+    margin-bottom: 50px;
+}
+.wp-theme-banner,
+.wp-theme-services-section,
+.lets-connect {
+    background: #f2f3f487;
 }
 
 /* Responsive   */
