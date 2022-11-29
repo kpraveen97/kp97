@@ -79,7 +79,7 @@
 	});
 
 
-	$('.wpem_charity_theme-testimonials-slider').slick({
+	$('.wp-theme-testimonials-slider').slick({
 	  infinite: true,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
