@@ -656,7 +656,7 @@ body.boxed-layout .site {
     align-items: center;
 }
 
-.grid-center {
+.div-center {
     display: grid;
     place-items: center;
 }
@@ -668,6 +668,9 @@ body.boxed-layout .site {
     /* margin-bottom: 25px; */
     justify-content: center;
     align-items: center;
+}
+.header-main .container {
+    max-width: 100%;
 }
 
 .main-navigation {
@@ -1330,7 +1333,7 @@ ol.wp-block-latest-comments {
 
 /* Global Variables */
 :root {
-    --wp-theme-primary-color: #1877F2;
+    --wp-theme-primary-color: #1877F2!important;
     --wp-theme-secondary-color: #000;
     --wp-theme-light-color: #F6FAF0;
     --wp-theme-dark-color: #000;
@@ -1347,6 +1350,39 @@ body {
 
 .overlay-light {
     background-color: #f5f5f5;
+}
+.slider_btn {
+    margin-top: 40px;
+}
+.slider_btn a {
+    border: 2px solid;
+    padding: 12px 35px;
+    background: transparent;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.slider_btn a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--wp-theme-button-color1);
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    border: 2px solid;
+    opacity: 0;
+}
+.slider_btn a:hover:before {
+    transform: none;
+    z-index: -1;
+    opacity: 1;
 }
 
 .theme_btn {
@@ -1515,7 +1551,33 @@ p {
 .main-menu-container {
     margin-right: 60px;
 }
-
+.logo-footer h2 {
+    position: relative;
+    overflow: hidden;
+}
+.logo-footer h2:before {
+    content: "WP THEMES";
+    color: var(--wp-theme-primary-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 4px solid var(--wp-theme-primary-color);
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide {
+    0% {
+          width: 0;
+    }
+    50% {
+           width: 100%;
+    }
+    100% {
+         width: 0;
+    }
+}
 .site-logo a {
     font-size: 30px;
     line-height: normal;
@@ -1548,6 +1610,10 @@ p {
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+.social-icons li:hover a {
+    transform: scale(1.2);
 }
 
 .social-icons li {
@@ -2014,6 +2080,55 @@ p {
     margin-top: 0;
 }
 
+/* wave animation */
+.wave {
+    width: 4px;
+    height: 60px;
+    background-color: var(--wp-theme-primary-color);
+    display: grid;
+    place-items: center;
+    margin: 0 4px;
+    border-radius: 6px;
+    animation: waves 1s linear infinite;
+    transform-origin: bottom;
+    transition: all 0.3s;
+}
+
+@keyframes waves {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
 
 
 /* Responsive   */

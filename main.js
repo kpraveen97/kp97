@@ -110,12 +110,7 @@ $('.slider-items').slick({
     slidesToShow: 1,
     adaptiveHeight: true
   });
-
-
-
-
 }); 
-
 
 $('.slider-items').slick({
     dots: true,
