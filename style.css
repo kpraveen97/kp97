@@ -285,7 +285,7 @@ textarea {
     margin-bottom: 60px;
 }
 h2 {
-    font-size: 30px;
+    font-size: calc(1.2rem + 1.2vw);
     text-transform: capitalize;
 }
 h1,
@@ -1470,8 +1470,8 @@ section {
 }
 .slider-item h1 {
     color: #000;
+    font-size: calc(1.2rem + 2vw);
 }
-
 p {
     font-weight: 400;
     color: #000;
@@ -1579,7 +1579,8 @@ p {
     }
 }
 .site-logo a {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: calc(1.2rem + 1.2vw);
     line-height: normal;
     text-transform: uppercase;
     font-weight: bold;
@@ -2082,9 +2083,9 @@ p {
 
 /* wave animation */
 .wave {
-    width: 4px;
+    width: 10px;
     height: 60px;
-    background-color: var(--wp-theme-primary-color);
+    background-color: #fff;
     display: grid;
     place-items: center;
     margin: 0 4px;
@@ -2325,7 +2326,6 @@ p {
         padding-top: 25px;
     }
 
-
     .wp-theme-footer {
         padding: 40px 0;
     }
@@ -2344,12 +2344,6 @@ p {
     }
     .agency-theme-demo img, .demo-item img {
         width: 80%;
-    }
-    .header-main {
-        background: var(--wp-theme-button-color1);
-    }
-    .site-logo a {
-        color: white;
     }
     .wpem_charity_theme-campaigns-box {
         margin-bottom: 30px;
