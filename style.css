@@ -638,7 +638,8 @@ body.boxed-layout .site {
 .btn.focus-visble,
 .btn.focus-visible:visited {
     background-color: var(--wp-theme-secondary-color);
-    color: var(--wp-theme-button-text-color);
+    /* color: var(--wp-theme-button-text-color); */
+    color: white;
 }
 
 .main-contain-wrapper {
@@ -650,12 +651,24 @@ body.boxed-layout .site {
     margin: auto;
 }
 
+.fontPoppins {
+  font-family: "Poppins";
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.flex_grow {
+    flex-grow: 1;
+}
+.flex-intial {
+    flex: 0 1 auto;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .div-center {
     display: grid;
     place-items: center;
@@ -668,9 +681,30 @@ body.boxed-layout .site {
     /* margin-bottom: 25px; */
     justify-content: center;
     align-items: center;
+    margin: 0 30px;
 }
 .header-main .container {
     max-width: 100%;
+}
+
+.toggle_btn .btn:hover {
+    background: #f2f3f4;
+    color: #000;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    background: #f2f3f4;
+    border-radius: 8px;
+    z-index: 2;
+}
+.active_navbar {
+    max-height: 50vh!important;
 }
 
 .main-navigation {
@@ -1117,6 +1151,18 @@ ol.wp-block-latest-comments {
 }
 
 @media (min-width: 992px) {
+    .toggle_btn .btn {
+        display: none;
+    }
+    .active_navbar {
+        max-height: 100%!important;
+    }
+    #nav {
+        flex-direction: row;
+    }
+    .collapse {
+        max-height: initial!important;
+    }
     .text-t-left {
         text-align: left;
     }
@@ -1376,7 +1422,6 @@ body {
     background: var(--wp-theme-button-color1);
     transform: translateX(-100%);
     transition: all 0.3s;
-    border: 2px solid;
     opacity: 0;
 }
 .slider_btn a:hover:before {
@@ -1478,12 +1523,17 @@ p {
 }
 
 .pt-0 {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .pb-0 {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
+.ml-8 {
+    margin-left: 80px;
+}
+
+
 
 .play-btn {
     background: var(--wp-theme-primary-color);
@@ -2131,6 +2181,48 @@ p {
     animation-delay: 0.8s;
 }
 
+/* hidden search starts  */
+.searchBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchText {
+    /* width: 250px; */
+    width: 0;
+    padding: 0!important;
+    transition: all 0.3s;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+.searchBox:hover .searchText {
+    width: 250px;
+    padding: 25px 20px!important;
+}
+.searchBox:hover .searchBtn {
+    right:30px;
+    /* left: calc(100% - 80px); */
+}
+.searchBtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--wp-theme-primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* left: 0 ; */
+    right: calc(100% - 30px);
+    transition: all 0.3s;
+}
+/* hidden search ends  */
+
 /* Responsive   */
 
 @media (max-width: 1199.98px) {}
@@ -2169,8 +2261,45 @@ p {
         margin-right: 0;
     }
 
-    .main-navigation {
+    /* .main-navigation {
         display: none;
+    } */
+
+    .main-navigation {
+        align-items: initial;
+    }
+    .main-navigation .theme_btn {
+        display: none;
+    }
+
+    .main-navigation li {
+        float: none;
+        padding: 0 1.5rem;
+        line-height: 3rem;
+        font-size: 1.1rem;
+    }
+    .toggle_btn .btn {
+        font-size: 2em;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: inherit !important;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 3rem;
+    }
+
+    .collapse {
+        max-height: 0px;
+        overflow-y: hidden;
+        transition: all 0.8s ease;
     }
 
     .main-navigation.toggled {
@@ -2224,10 +2353,10 @@ p {
         padding: 10px 20px;
     }
 
-    .main-navigation .theme_btn {
+    /* .main-navigation .theme_btn {
         margin: 10px auto 20px;
         display: table;
-    }
+    } */
 }
 
 @media (max-width: 767.98px) {

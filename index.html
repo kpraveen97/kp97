@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-main">
+    <!-- <header class="site-header">
+     <nav id="nav" class="header-main">
             <div class="container">
                 <div class="row">
                     <div class="column column-3 flex-center">
@@ -24,9 +24,15 @@
                             <a href="#">WP-AGENCY</a>
                         </div>
                     </div>
+                    <div class="column column-3 flex-center">
+                        <div class="toggle_btn">
+                            <button class="btn">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div class="column column-8">
-                        <nav class="main-navigation">
-                            <div class="main-menu-container">
+                            <div class="main-menu-container collapse flex_grow">
                                 <ul>
                                     <li>
                                         <a href="#">Agency Theme</a>
@@ -34,24 +40,54 @@
                                     <li>
                                         <a href="#">Prebuilt Websites</a>
                                     </li>
-                                    <!-- <li>
+                                    <li>
                                         <a href="#">Pricing</a>
-                                    </li> -->
+                                    </li>
                                     <li>
                                         <a href="#">Design to website service</a>
                                     </li>
                                 </ul>
                             </div>
                             <button class="theme_btn">Tell us about your project</button>
-                            <!-- <a href="#" target="_blank" class="text-center nav-btn">
-                                Tell us about your project
-                                <div class="wave"></div>
-                            </a> -->
-                        </nav>
                     </div>
                 </div>
             </div>
+        </nav>
+    </header> -->
+
+    <header class="header-main">
+     <nav id="nav" class="main-navigation">
+        <div class="site-logo">
+            <a href="#">WP-AGENCY</a>
         </div>
+        <div class="toggle_btn">
+            <button class="btn">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="collapse flex_grow ml-8">
+            <ul style="display: flex;">
+                <li>
+                    <a href="#">Agency Theme</a>
+                </li>
+                <li>
+                    <a href="#">Prebuilt Websites</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Design to website service</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-inital">
+            <ul style="display: flex;">
+                <button class="theme_btn">Tell us about your project</button>
+            </ul>
+        </div>
+
+     </nav>
     </header>
 
     <main>
@@ -416,6 +452,12 @@
                             </div>
                         </ul>
                     </div>
+                    <div class="searchBox">
+                        <!-- <input type="search" name="" id=""> -->
+                        <input type="text" class="searchText" placeholder="Type to search...">
+                        <a href="#" class="searchBtn"><i class="fa fa-search"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="column column-3">
                     <div class="footer-col-links">
@@ -483,13 +525,14 @@
     </footer>
 
     <!-- Scripts  -->
-    <script src="/assets/vendor/slick/slick.min.js"></script>
+    <!-- <script src="/assets/vendor/slick/slick.min.js"></script>
     <script src="/assets/js/navigation.js"></script>
     <script src="/assets/js/skip-link-focus-fix.js"></script>
     <script src="/assets/js/theme-custom.js"></script>
     <script src="/assets/js/jquery.paroller.js"></script>
     <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js"></script> -->
+    <script src="nav.js"></script>
 
     <script>
 
