@@ -35,7 +35,6 @@ h1 {
     font-size: 3.75rem;
     line-height: 1.2;
     font-weight: 800;
-    /* margin-bottom: 30px; */
 }
 
 hr {
@@ -956,15 +955,6 @@ blockquote p:last-child {
     padding-bottom: 60px;
 
 }
-/* 
-.footer-bottom .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} */
 
 #goTop {
     display: block;
@@ -1630,7 +1620,6 @@ p {
     }
 }
 .site-logo a {
-    /* font-size: 30px; */
     font-size: calc(1.2rem + 1.2vw);
     line-height: normal;
     text-transform: uppercase;
@@ -1800,47 +1789,7 @@ p {
 .nav-btn:hover {
     box-shadow: var(--box-shadow);
 }
-/* .nav-btn::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: navy;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s 0s;
-    overflow: hidden;
-    z-index: -1;
-} /*
-.nav-btn:hover::before {
-  transform: scaleX(1.2) scaleY(1.4);
-  opacity: 0;
-} 
-*/
-/* .wave {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: calc(100% + 22px);
-    right: 0;
-    background: var(--wp-theme-button-color1);
-    transition: all 1s;
-    z-index: -1;
-}
-.wave:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 22px;
-    background-image: url(assets/images/wave.svg);
-    right: 0;
-    top: -22px;
-    animation: wavy 0.5s linear infinite;
-} */
+
 .nav-btn:hover .wave {
     top: 0;
 }
@@ -2311,10 +2260,6 @@ p {
         margin-right: 0;
     }
 
-    /* .main-navigation {
-        display: none;
-    } */
-
     .main-navigation {
         align-items: initial;
     }
@@ -2402,11 +2347,6 @@ p {
     .main-navigation ul ul a {
         padding: 10px 20px;
     }
-
-    /* .main-navigation .theme_btn {
-        margin: 10px auto 20px;
-        display: table;
-    } */
 }
 
 @media (max-width: 767.98px) {
