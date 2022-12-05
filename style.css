@@ -2222,6 +2222,64 @@ p {
 }
 /* hover cards ends  */
 
+/* contact form starts  */
+.contact_form_container {
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    background: var(--wp-theme-primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+.inputBox {
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.contact_form_container input[type="submit"] {
+    background: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 14px;
+    border: 3px solid;
+    border-radius: 6px;
+}
+/* contact form ends  */
+
+
 /* Responsive   */
 
 @media (max-width: 1199.98px) {}
