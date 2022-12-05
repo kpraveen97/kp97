@@ -1661,13 +1661,20 @@ p {
     margin-right: 30px;
     width: 60px;
     height: 60px;
-    background: #f2f3f4;
+    background-color: transparent;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
+    position: relative;
 }
-
+/* .social-icons li:before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: var(--wp-theme-primary-color);
+} */
 .lets-connect h2 {
     font-size: 30px;
 }
@@ -1899,28 +1906,26 @@ p {
     margin-bottom: 30px;
 }
 
-.lightning_text {
+/* .lightning_text {
     list-style: none;
     display: flex;
     justify-content: center;
-}
+} */
 
-.lightning_text li {
+/* .lightning_text li {
     font-size: calc(1.3rem + 1vw);
     text-transform: uppercase;
     font-weight: bold;
     padding-left: 10px;
     transition: all 1s;
-    /* color: #576574; */
     animation: light 2s linear infinite;
-    /* color: white; */
-}
+} */
 
 .lightning_text li:first-child {
     padding-left: 0;
 }
 
-@keyframes light {
+/* @keyframes light {
     0% {
         color: #000;
         text-shadow: none;
@@ -1974,7 +1979,7 @@ p {
 }
 .lightning_text li:nth-child(11) {
     animation-delay: 1.3s;
-}
+} */
 
 /* animated loading divs start  */
 .main_loading {
