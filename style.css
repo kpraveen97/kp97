@@ -2284,6 +2284,11 @@ p {
 }
 /* contact form ends  */
 
+.column.column-3.why-us-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 /* Responsive   */
 
