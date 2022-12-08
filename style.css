@@ -460,9 +460,9 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-    color: var(--wp-theme-secondary-color);
-    border-color: var(--wp-theme-primary-color);
+    color: white;
     outline: none;
+    border-bottom: 3px solid white;
 }
 
 /* Menus  */
@@ -2269,8 +2269,8 @@ p {
 .inputBox input:valid ~ label{
     top: -20px;
     left: 0;
-    color: #000;
-    font-size: 12px;
+    color: white;
+    font-size: 14px;
 }
 
 .contact_form_container input[type="submit"] {
