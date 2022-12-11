@@ -1,2 +1,3 @@
 # kp97
-Powerful WordPress Themes
+Website, Apps & UI design agency.
+Technology we work with are react js.
