@@ -1,9 +1,9 @@
 /*
-Theme Name: WP Themes
+Theme Name: kp97
 Theme URI: https://wp-themes.com/
 Author: K Praveen Kumar
 Author URI: https://wp-themes.com/the-team/
-Description: WP Theme is a powerful,fast, fully customizable & beautiful WordPress theme suitable for any event, blog, portfolio, business website and WooCommerce storefront. A theme compatible with WP Event Manager plugin. Also, It offers special features and templates so it works perfectly with all page builders like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, etc. Some of the other features: # Responsive # RTL #Translation Ready #SEO Friendly # WooCommerce Ready # Extendible with WP Event Manager addons # Regularly updated # Designed, Developed, Maintained & Supported by WP Event Manager’s dedicated team. Looking for a perfect base theme for WP Theme? Look no further. You can use an WP Theme theme for building any kind of event website!
+Description: kp97 is a powerful,fast, fully customizable & beautiful WordPress theme suitable for any event, blog, portfolio, business website and WooCommerce storefront. A theme compatible with WP Event Manager plugin. Also, It offers special features and templates so it works perfectly with all page builders like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, etc. Some of the other features: # Responsive # RTL #Translation Ready #SEO Friendly # WooCommerce Ready # Extendible with WP Event Manager addons # Regularly updated # Designed, Developed, Maintained & Supported by WP Event Manager’s dedicated team. Looking for a perfect base theme for kp97? Look no further. You can use an kp97 theme for building any kind of event website!
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Tags:  entertainment, portfolio, e-commerce, one-column, two-columns, full-width
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-WP Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+kp97 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1597,7 +1597,7 @@ p {
     overflow: hidden;
 }
 .logo-footer h2:before {
-    content: "WP THEMES";
+    content: "kp97";
     color: var(--wp-theme-primary-color);
     position: absolute;
     width: 100%;
