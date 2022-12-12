@@ -99,6 +99,7 @@ sup {
 
 img {
     border-style: none;
+    border-radius: 1.5rem;
 }
 
 .btn {
@@ -1392,7 +1393,7 @@ body {
     margin-top: 40px;
 }
 .slider_btn a {
-    border: 2px solid;
+    border: 3px solid;
     padding: 12px 35px;
     background: transparent;
     color: #000;
@@ -1403,7 +1404,7 @@ body {
     overflow: hidden;
     transition: all 0.3s;
 }
-.slider_btn a::before {
+/* .slider_btn a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1419,7 +1420,7 @@ body {
     transform: none;
     z-index: -1;
     opacity: 1;
-}
+} */
 
 .theme_btn {
     background: var(--wp-theme-button-color1);
@@ -1622,7 +1623,6 @@ p {
 .site-logo a {
     font-size: calc(1.2rem + 1.2vw);
     line-height: normal;
-    text-transform: uppercase;
     font-weight: bold;
     font-family: 'poppins';
     letter-spacing: 1px;
