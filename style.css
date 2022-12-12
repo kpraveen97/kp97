@@ -1627,6 +1627,9 @@ p {
     font-family: 'poppins';
     letter-spacing: 1px;
 }
+.site-logo span {
+    color: var(--wp-theme-primary-color);
+}
 
 .logo-item:hover img {
     transform: scale(1.2);
@@ -2284,10 +2287,16 @@ p {
 }
 /* contact form ends  */
 
-.column.column-3.why-us-item {
+.why-us-item {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #f2f3f4;
+    margin: 10px;
+    width: 240px;
+    height: 240px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 /* Responsive   */
