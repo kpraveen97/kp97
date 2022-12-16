@@ -2547,6 +2547,10 @@ p {
     .wpem_charity_theme-campaigns-box {
         margin-bottom: 30px;
     }
+    .logo-item,
+    .demo-item {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 575.98px) {}
