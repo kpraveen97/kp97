@@ -1996,16 +1996,17 @@ p {
 }
 
 .center_loading {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     background: transparent;
     position: relative;
 }
 
 .center_loading span {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: var(--wp-theme-button-color1);
+    color: #fff;
     position: absolute;
     z-index: 0;
     left: 0;
@@ -2546,6 +2547,9 @@ p {
     }
     .card_number h2 {
         font-size: 60px;
+    }
+    .wave_loading_effect h2 {
+        margin-left: 25px;
     }
 }
 
