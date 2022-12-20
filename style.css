@@ -643,7 +643,6 @@ body.boxed-layout .site {
 .btn.focus-visble,
 .btn.focus-visible:visited {
     background-color: var(--wp-theme-secondary-color);
-    /* color: var(--wp-theme-button-text-color); */
     color: white;
 }
 
@@ -687,7 +686,6 @@ body.boxed-layout .site {
 .header-main {
     background-color: #fff;
     padding: 30px 0;
-    /* margin-bottom: 25px; */
     justify-content: center;
     align-items: center;
     margin: 0 30px;
@@ -1423,24 +1421,6 @@ body {
     transition: all 0.3s;
 }
 
-/* .slider_btn a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: var(--wp-theme-button-color1);
-    transform: translateX(-100%);
-    transition: all 0.3s;
-    opacity: 0;
-}
-.slider_btn a:hover:before {
-    transform: none;
-    z-index: -1;
-    opacity: 1;
-} */
-
 .theme_btn {
     background: var(--wp-theme-button-color1);
     border: 0;
@@ -1526,7 +1506,6 @@ section {
 .slider-item p {
     max-width: 600px;
     margin: 30px auto;
-    /* color: white; */
 }
 
 .slider-item h1 {
@@ -1706,12 +1685,6 @@ p {
     position: relative;
 }
 
-/* .social-icons li:before {
-    content: "";
-    width: inherit;
-    height: inherit;
-    background: var(--wp-theme-primary-color);
-} */
 .lets-connect h2 {
     font-size: 30px;
 }
@@ -1979,80 +1952,9 @@ p {
     margin-bottom: 30px;
 }
 
-/* .lightning_text {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .lightning_text li {
-    font-size: calc(1.3rem + 1vw);
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-left: 10px;
-    transition: all 1s;
-    animation: light 2s linear infinite;
-} */
-
 .lightning_text li:first-child {
     padding-left: 0;
 }
-
-/* @keyframes light {
-    0% {
-        color: #000;
-        text-shadow: none;
-        transition: all 0.3s;
-    }
-
-    90% {
-       color: #000;
-       text-shadow: none;
-       transition: all 0.3s;
-
-    }
-
-    100% {
-       color: var(--wp-theme-button-color1);
-       text-shadow: 0 0 20px var(--wp-theme-button-color1), 0 0 140px var(--wp-theme-button-color1);
-       transition: all 0.3s;
-
-    }
-}
-
-.lightning_text li:nth-child(1) {
-    animation-delay: 0s;
-}
-.lightning_text li:nth-child(2) {
-    animation-delay: 0.1s;
-}
-.lightning_text li:nth-child(3) {
-    animation-delay: 0.3s;
-}
-.lightning_text li:nth-child(4) {
-    animation-delay: 0.4s;
-}
-.lightning_text li:nth-child(5) {
-    animation-delay: 0.5s;
-}
-.lightning_text li:nth-child(6) {
-    animation-delay: 0.6s;
-}
-.lightning_text li:nth-child(7) {
-    animation-delay: 0.7s;
-}
-.lightning_text li:nth-child(8) {
-    animation-delay: 0.8s;
-}
-.lightning_text li:nth-child(8) {
-    animation-delay: 0.9s;
-}
-.lightning_text li:nth-child(10) {
-    animation-delay: 1.0s;
-}
-.lightning_text li:nth-child(11) {
-    animation-delay: 1.3s;
-} */
 
 /* animated loading divs start  */
 .main_loading {
@@ -2161,7 +2063,6 @@ p {
 
 .agency-theme-demo:hover .captions {
     opacity: 1;
-    /* transform: scale(1.1); */
 }
 
 .captions h4 {
@@ -2248,7 +2149,6 @@ p {
 }
 
 .searchText {
-    /* width: 250px; */
     width: 0;
     padding: 0 !important;
     transition: all 0.3s;
@@ -2264,7 +2164,6 @@ p {
 
 .searchBox:hover .searchBtn {
     right: 30px;
-    /* left: calc(100% - 80px); */
 }
 
 .searchBtn {
@@ -2279,7 +2178,6 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* left: 0 ; */
     right: calc(100% - 30px);
     transition: all 0.3s;
 }
