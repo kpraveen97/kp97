@@ -1394,6 +1394,7 @@ ol.wp-block-latest-comments {
     --wp-theme-gradient: linear-gradient(90deg, var(--wp-theme-button-color1), var(--wp-theme-button-color2));
     --wp-theme-gradient-hover: linear-gradient(260deg, var(--wp-theme-button-color1), var(--wp-theme-button-color2));
     --box-shadow: 0 10px 40px rgb(0 0 0 / 5%);
+    --box-shadow-cards: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 body {
