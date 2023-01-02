@@ -1964,6 +1964,7 @@ p {
     background: #f2f3f4;
     display: grid;
     place-items: center;
+    border-radius: 20px;
 }
 
 .center_loading {
@@ -2297,3 +2298,13 @@ p {
 }
 
 /* contact form ends  */
+
+@media (max-width:768px) {
+    .services-item {
+        display: grid;
+        place-items: center;
+    }
+    .services-item p {
+        max-width: 280px;
+    }
+}
